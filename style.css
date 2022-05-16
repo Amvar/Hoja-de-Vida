@@ -32,9 +32,9 @@ body {
     position: absolute;
     top: 10%;
     right: 20%;
-    width: 180px;
-    height: 180px;
-    border-radius: 100%;
+    width: 10%;
+    height: 20%;
+    border-radius: 50%;
     overflow: hidden;
     box-shadow: -10px -10px 0 rgb(37, 35, 35);
 }
@@ -87,6 +87,12 @@ body {
     display: inline;
 }
 
+.informacion .laboral {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto;
+}
+
 .informacion .grilla {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -125,8 +131,24 @@ body {
 }
 
 .informacion .grilla span img {
-    width: 80%;
+    width: 60%;
     filter: drop-shadow(0 2px 5px rgb(57, 54, 54));
+}
+
+.informacion .laboral{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto auto;
+}
+.informacion .laboral span img {
+    width: 40%;
+    filter: drop-shadow(0 2px 5px rgb(221, 215, 215));
+}
+.informacion .laboral .text {
+    color: whitesmoke;
+    font-family: 'Roboto Slab', serif;
+    font-weight: normal;
+    font-size: large;
 }
 
 .informacion .proyecto {
